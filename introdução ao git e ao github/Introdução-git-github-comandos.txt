@@ -1,0 +1,84 @@
+#Comando específico
+ - git help add
+ - git help commit
+ - git help <qualquer_comando_git>
+
+#Definir usuário
+ - git config --global user.name "NOME"
+
+#Definir e-mail
+ - git config --global user.email "EMAIL"
+
+#Editor Setar
+ - git config --global core.editor vim
+
+#Setar ferramenta de mesclagem
+ - git config --global merge.tool vimdiff
+
+#Setar arquivos a serem ignorados
+ - git config --global core.excludesfile ~/.gitignore
+
+#Listar configurações
+ - git config --list
+
+#criar recurso
+ - git init
+
+#Verificar estado dos arquivos/diretórios
+ - git status
+
+#Adicionar um arquivo em específico
+ - git add meu_arquivo.txt
+
+#Adicionar um diretório específico
+ - git add meu_diretorio
+
+#Adicionar todos os arquivos/diretórios
+ - git add .
+
+#Comitar um arquivo
+ - git commit meu_arquivo.txt
+
+#Comitar vários arquivos
+ - git commit meu_arquivo.txt meu_outro_arquivo.txt
+
+#Comitar informando mensagem
+ - git commit meuarquivo.txt -m "minha mensagem de commit"
+
+#Remover arquivo
+ - git rm meu_arquivo.txt
+
+#Remover pasta
+ - git rm -r diretorio
+
+#Exibir histórico
+ - git log
+
+#Exibir histórico
+- git log
+
+#Exibir histórico com diff das duas últimas mudanças
+ - git log -p -2
+
+#Exibir resumo do histórico (hash completa, autor, data, comentário e qtde de changes (+/-))
+ - git log --stat
+
+#Exibir informações resumidas em uma linha (hash completa e comentário)
+ - git log --pretty=oneline
+
+#Exibir histórico com formatação específica (hash abreviada, autor, data e comentário)
+git log --pretty=format:"%h - %an, %ar : %s"
+ - %h: Abreviação do hash;
+ - %an: Nome do autor;
+ - %ar: Dados;
+ - %s: Comentário.
+
+
+#Exibir histórico de um arquivo específico
+ - git log -- <caminho_do_arquivo>
+
+#histórico de um arquivo específico Exibir uma palavra determinada
+ - git log --summary -S<palavra> [<caminho_do_arquivo>]
+
+#Exibir histórico by um arquivo
+ - git log --diff-filter=M -- <caminho_do_arquivo>
