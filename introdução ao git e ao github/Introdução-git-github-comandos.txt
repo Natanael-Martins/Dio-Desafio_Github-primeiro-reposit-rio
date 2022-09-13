@@ -2,7 +2,14 @@
  - git help add
  - git help commit
  - git help <qualquer_comando_git>
+# git config
+Quando você está utilizando o Git pela primeira vez ou com uma instalação nova, em um projeto colaborativo, esse comando é fundamental para configurar sua identidade de usuário, inserindo informações como nome e email que serão empregadas em cada commit.
 
+Exemplo:
+
+$ git config –global user.name “Seu nome”
+
+$ git config –global user.email “Seu email”
 #Definir usuário
  - git config --global user.name "NOME"
 
@@ -82,3 +89,5 @@ git log --pretty=format:"%h - %an, %ar : %s"
 
 #Exibir histórico by um arquivo
  - git log --diff-filter=M -- <caminho_do_arquivo>
+
+#
