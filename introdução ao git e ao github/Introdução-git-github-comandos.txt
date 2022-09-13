@@ -7,9 +7,10 @@ Quando você está utilizando o Git pela primeira vez ou com uma instalação no
 
 Exemplo:
 
-$ git config –global user.name “Seu nome”
+$ git config –global user.name “Seu nome
 
-$ git config –global user.email “Seu email”
+$ git config –global user.email “Seu email
+
 #Definir usuário
  - git config --global user.name "NOME"
 
